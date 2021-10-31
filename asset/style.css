@@ -1,0 +1,286 @@
+.bgnav {
+    background-color: rgba(78, 78, 78, 0.007);
+}
+
+.header-white {
+    background-color: rgba(85, 85, 85, 0.945);
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.logo img {
+    width: 100px;
+    height: 60px;
+    margin-left: 50px;
+}
+
+.baniere {
+    background: rgb(88, 88, 88);
+}
+
+.carousel-inner {
+    height: 50vh;
+    image-rendering: crisp-edges;
+}
+
+.section2 p {
+    padding-left: 50px;
+}
+
+.flexbox p {
+    font-size: 1rem;
+    padding-top: 5px;
+}
+
+.flexbox img {
+    border: solid 1px crimson;
+    margin-left: 30px;
+}
+
+.flexbox {
+    padding-left: 90px;
+}
+
+#hr {
+    color: crimson;
+    border: 3px solid;
+    margin-left: 50px;
+    margin-right: 50px;
+    background: crimson;
+    border-radius: 10px;
+}
+
+#blog2 {
+    height: 20vh;
+    margin-bottom: 20px;
+}
+
+.section2_text h2 {
+    color: crimson;
+}
+
+.section2_text h2,
+h4 {
+    text-align: center;
+}
+
+.section2_text {
+    margin-top: 50px;
+    text-align: right;
+}
+
+#image_gauche {
+    float: left;
+    margin-top: 20vh;
+    margin-left: 80px;
+}
+
+#img_flexbox2 {
+    margin-right: 200px;
+    margin-top: 0px;
+    margin: 50px;
+}
+
+.blog_section2_1 {
+    display: flex;
+    margin: 10px;
+    margin-bottom: 0px;
+}
+
+.blog_section2_1 p {
+    color: black;
+    margin-right: 30px;
+}
+
+.blog_section_3 {
+    background: crimson;
+}
+
+.blog_section_3 h2 {
+    font-size: 18px;
+    color: white;
+    margin-left: 90px;
+}
+
+.blog_section_3 p {
+    margin-left: 90px;
+    color: white;
+}
+
+.blog_section_3 {
+    display: inline-flex;
+    margin-bottom: 20px;
+}
+
+.blog_section_4 {
+    margin-bottom: 50px;
+}
+
+.blog_section_3 button {
+    margin-top: 20px;
+    border-color: white;
+    background: white;
+    border-radius: 10px;
+}
+
+.blog_section_5 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.blog_section_5 img {
+    width: 80px;
+    margin-left: 130px;
+}
+
+.blog_section_5 p {
+    color: black;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.footer {
+    background: black;
+    height: 50vh;
+    margin-top: 30px;
+}
+
+#titre_principal_footer {
+    display: flex;
+    flex-direction: column;
+}
+
+#logo_footer {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    color: #fff;
+}
+
+#logo_footer img {
+    width: 100px;
+    height: 60px;
+    margin-left: 50px;
+    color: #fff;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer a:hover {
+    color: #fff;
+}
+
+.liena_footer {
+    margin-top: 50px;
+}
+
+.liena_footer h4 {
+    color: #fff;
+}
+
+#footer_flexbox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: flex-start;
+}
+
+.footer button {
+    float: right;
+    margin-top: 40px;
+    margin-right: 50px;
+    border-radius: 10px;
+}
+
+.footer p {
+    text-align: center;
+    margin-top: 50px;
+    color: #fff;
+}
+
+.card-tal .card-tal-con {
+    background-color: #42347ecb;
+    height: 100%;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.card-tal button {
+    background-color: #41347E;
+    color: white
+}
+
+#platine {
+    margin-bottom: 30px;
+}
+
+@media screen and ( max-width: 375px) {
+    #platine {
+        margin-bottom: 30px;
+    }
+}
+
+.flexrow {
+    display: flex;
+}
+
+#credits {
+    display: flex;
+}
+
+.row {
+    display: flex;
+}
+
+@media screen and (max-width: 375px) {
+    .blog_section_3 {
+        display: inline-flex;
+        margin-bottom: 20px;
+    }
+    .blog_section_3 button {
+        margin-left: 10%;
+        margin-top: 20px;
+        border-color: white;
+        background: white;
+        border-radius: 10px;
+    }
+    .logo img {
+        width: 80px;
+        height: 60px;
+        margin-left: 25px;
+    }
+}
+
+@media screen and(max-width:768px) {
+    .blog_section_3 {
+        display: inline-flex;
+        margin-bottom: 20px;
+    }
+    .blog_section_3 button {
+        margin-top: 20px;
+        border-color: white;
+        background: white;
+        border-radius: 10px;
+    }
+    .logo img {
+        width: 80px;
+        height: 60px;
+        margin-left: 25px;
+    }
+}

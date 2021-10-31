@@ -1,0 +1,178 @@
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.bgnav {
+    background-color: rgba(78, 78, 78, 0.007);
+}
+
+.header-white {
+    background-color: rgba(85, 85, 85, 0.945);
+}
+
+.logo img {
+    width: 100px;
+    height: 60px;
+    margin-left: 50px;
+}
+
+.accueil_gauche a {
+    padding-right: 30px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.accueil_gauche a:hover {
+    color: #fff;
+}
+
+.accueil_gauche {
+    margin-top: 0px;
+    background: crimson;
+    height: 40px;
+    border: solid 4px crimson;
+}
+
+.droite {
+    margin-right: 50px;
+}
+
+.apropos h1 {
+    width: 100px;
+    color: white;
+    background: crimson;
+    font-size: 18px;
+    height: 40px;
+    padding-top: 10px;
+}
+
+.contact a {
+    background: crimson;
+    font-size: 18px;
+    height: 40px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.section3 {
+    padding-left: 39%;
+}
+
+.blog_section_6 {
+    background: url(../asset/img/bg1.png);
+    height: 52vh;
+    margin-top: 40px;
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+.form_principal {
+    margin-right: 50%;
+    background: rgba(160, 106, 106, 0.521);
+    margin-left: 40px;
+    border-radius: 30px;
+    box-shadow: crimson;
+}
+
+.form h4 {
+    padding-right: 30vh;
+}
+
+.form {
+    border-radius: 5px;
+}
+
+.form input {
+    text-align: center;
+    margin-top: 0px;
+    border: none;
+    border-bottom: 9px solid rgb(226, 8, 8);
+    background: #fff;
+    color: #fff;
+}
+
+.form input:hover {
+    background: gray;
+    color: #fff;
+}
+
+#input {
+    border: none;
+    border-bottom: 9px solid rgb(233, 5, 5);
+    opacity: 1;
+}
+
+.btn button {
+    margin-top: 5px;
+    background-color: crimson;
+    border-radius: 20px;
+    border: none;
+    color: #fff;
+    height: 40px;
+}
+
+.footer {
+    background: black;
+    height: 50vh;
+    margin-top: 40px;
+}
+
+#titre_principal_footer {
+    display: flex;
+    flex-direction: column;
+}
+
+#logo_footer {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    color: #fff;
+}
+
+#logo_footer img {
+    width: 100px;
+    height: 60px;
+    margin-left: 50px;
+    color: #fff;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer a:hover {
+    color: #fff;
+}
+
+.liena_footer {
+    margin-top: 50px;
+}
+
+.liena_footer h4 {
+    color: #fff;
+}
+
+#footer_flexbox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: flex-start;
+}
+
+.footer button {
+    float: right;
+    margin-top: 40px;
+    margin-right: 50px;
+    border-radius: 10px;
+}
+
+.footer p {
+    text-align: center;
+    margin-top: 50px;
+    color: #fff;
+}

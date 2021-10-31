@@ -1,0 +1,120 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.bgnav {
+    background-color: rgba(78, 78, 78, 0.007);
+}
+
+.header-white {
+    background-color: rgba(85, 85, 85, 0.945);
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.logo img {
+    width: 100px;
+    height: 60px;
+    margin-left: 50px;
+}
+
+h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: bold;
+    text-align: center;
+    padding-top: 80px;
+    margin-bottom: 30px;
+}
+
+.section1 p {
+    padding-left: 30px;
+}
+
+.pasie h4 {
+    padding-left: 30px;
+}
+
+p {
+    color: rgba(101, 101, 102, 0.555);
+}
+
+.pasie p {
+    padding-left: 50px;
+}
+
+.passie-1 p {
+    padding-left: 70px;
+}
+
+.passie-2 p {
+    padding-left: 90px;
+}
+
+.footer {
+    background: black;
+    height: 50vh;
+    margin-top: 22px;
+}
+
+#titre_principal_footer {
+    display: flex;
+    flex-direction: column;
+}
+
+#logo_footer {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    color: #fff;
+}
+
+#logo_footer img {
+    width: 100px;
+    height: 60px;
+    margin-left: 50px;
+    color: #fff;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer a:hover {
+    color: #fff;
+}
+
+.liena_footer {
+    margin-top: 50px;
+}
+
+.liena_footer h4 {
+    color: #fff;
+}
+
+#footer_flexbox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: flex-start;
+}
+
+.footer button {
+    float: right;
+    margin-top: 40px;
+    margin-right: 50px;
+    border-radius: 10px;
+}
+
+.footer p {
+    text-align: center;
+    margin-top: 120px;
+    color: #fff;
+}

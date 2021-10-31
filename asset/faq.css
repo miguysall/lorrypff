@@ -1,0 +1,173 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.bgnav {
+    background-color: rgba(78, 78, 78, 0.007);
+}
+
+.header-white {
+    background-color: rgba(85, 85, 85, 0.945);
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.logo img {
+    width: 100px;
+    height: 60px;
+    margin-left: 50px;
+}
+
+
+/*  Container */
+
+.section2 {
+    margin-bottom: 50px;
+}
+
+.section1 h2 {
+    text-align: center;
+    padding-top: 60px;
+}
+
+.section2 h3 {
+    padding-left: 20vh;
+}
+
+.section2 h5 {
+    padding-left: 25vh;
+}
+
+.section2 p {
+    padding-left: 27vh;
+}
+
+p {
+    color: rgba(101, 101, 102, 0.555);
+}
+
+.section2 .pasie p {
+    padding-left: 29vh;
+}
+
+.section2 .pasie .petitea p {
+    padding-left: 33vh;
+}
+
+.section3 h3 {
+    padding-left: 20vh;
+}
+
+.section3 h5 {
+    padding-left: 25vh;
+}
+
+.section3 p {
+    padding-left: 27vh;
+}
+
+.section3 .pasie p {
+    padding-left: 29vh;
+}
+
+.section4 h3 {
+    padding-left: 20vh;
+}
+
+.section4 h5 {
+    padding-left: 25vh;
+}
+
+.section4 p {
+    padding-left: 27vh;
+}
+
+.section4 .pasie p {
+    padding-left: 29vh;
+}
+
+.section5 h3 {
+    padding-left: 20vh;
+}
+
+.section5 h5 {
+    padding-left: 25vh;
+}
+
+.section5 p {
+    padding-left: 27vh;
+}
+
+.petitea ul {
+    padding-left: 33vh;
+    color: rgba(101, 101, 102, 0.555);
+}
+
+.footer {
+    background: black;
+    height: 50vh;
+    margin-top: 22px;
+}
+
+#titre_principal_footer {
+    display: flex;
+    flex-direction: column;
+}
+
+#logo_footer {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    color: #fff;
+}
+
+#logo_footer img {
+    width: 100px;
+    height: 60px;
+    margin-left: 50px;
+    color: #fff;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer a:hover {
+    color: #fff;
+}
+
+.liena_footer {
+    margin-top: 50px;
+}
+
+.liena_footer h4 {
+    color: #fff;
+}
+
+#footer_flexbox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: flex-start;
+}
+
+.footer button {
+    float: right;
+    margin-top: 40px;
+    margin-right: 50px;
+    border-radius: 10px;
+}
+
+.footer p {
+    text-align: center;
+    margin-top: 120px;
+    color: #fff;
+}

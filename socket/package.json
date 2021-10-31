@@ -1,0 +1,11 @@
+{
+    "name": "socket-chat-app",
+    "version": "1.0.0",
+    "description": "chat app lorrybussiness",
+    "main": "index.js",
+    "author": "Miguy Sall",
+    "dependencies": {
+        "express": "^4.17.1",
+        "socket.io": "^4.3.1"
+    }
+}
