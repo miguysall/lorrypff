@@ -26,9 +26,7 @@
   </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                        <a class="nav-link active text-light" aria-current="page" href="./contact.php">Nous Contacter</a>
-                    </li>
+               
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Entreprise
@@ -41,6 +39,12 @@
                             </li>
                             <li><a class="dropdown-item text-dark" href="../index.php#credits">Crédits</a></li>
                         </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" aria-current="page" href="apropos.php">À propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" aria-current="page" href="./contact.php">Nous Contacter</a>
                     </li>
                     <li class="nav-item">
                     <a class="nav-link active text-light" aria-current="page" href="../login/login.php">Se connecter</a>

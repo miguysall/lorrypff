@@ -18,9 +18,8 @@ body {
 }
 
 .logo img {
-    width: 100px;
-    height: 60px;
-    margin-left: 50px;
+    max-height: 40px;
+    margin-left: 0px;
 }
 
 h1 {
@@ -39,9 +38,7 @@ h1 {
     padding-left: 30px;
 }
 
-p {
-    color: rgba(101, 101, 102, 0.555);
-}
+
 
 .pasie p {
     padding-left: 50px;

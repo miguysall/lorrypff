@@ -20,15 +20,15 @@ if (isset($_POST['login'])) {
 }
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lorrybussiness site logistique transport et de commerce...">
     <title>Document</title>
+    <link rel="stylesheet" href="../asset/bootstrap/css/bootstrap.min.css">
 <link rel="stylesheet" href="../asset/login.css">
-
-<link rel="stylesheet" href="../asset/bootstrap/css/bootstrap.min.css">
 </head>
 <body>
 <div class="login-form">
@@ -37,16 +37,16 @@ if (isset($_POST['login'])) {
             <div class="text-center social-btn">
                 <a href="#" class="btn btn-danger btn-block"><i class="fa fa-google"></i>Se connecter avec <b>Google</b></a>
             </div>
-            <div class="or-seperator"><i>ou</i></div>
+            <div class="or-seperator"><i>ou</i></div><br>
 
-            <div class="form-group">
+            <div class="form-group mb-4">
                 <div class="input-group">
                     <span class="input-group-addon"><i class="fa fa-user"></i></span>
                     <input type="text" name="email" placeholder="Votre e-mail" required class="form-control mb-2" />
                 </div>
             </div>
 
-            <div class="form-group">
+            <div class="form-group  mb-4">
                 <div class="input-group">
                     <span class="input-group-addon"><i class="fa fa-lock"></i></span>
                     <input type="password" name="password" placeholder="Votre mot de passe" required class="form-control mb-2" />

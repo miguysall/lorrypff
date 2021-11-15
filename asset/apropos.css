@@ -4,6 +4,11 @@
     align-items: baseline;
 }
 
+.nav-link a:hover {
+    color: crimson;
+
+}
+
 .bgnav {
     background-color: rgba(78, 78, 78, 0.007);
 }
@@ -13,9 +18,8 @@
 }
 
 .logo img {
-    width: 100px;
-    height: 60px;
-    margin-left: 50px;
+    max-height: 40px;
+    margin-left: 0px;
 }
 
 .accueil_gauche a {
@@ -30,23 +34,16 @@
 
 .accueil_gauche {
     margin-top: 0px;
-    background: crimson;
+    
     height: 40px;
-    border: solid 4px crimson;
+
+   
 }
 
 .droite {
     margin-right: 50px;
 }
 
-.apropos h1 {
-    width: 100px;
-    color: white;
-    background: crimson;
-    font-size: 18px;
-    height: 40px;
-    padding-top: 10px;
-}
 
 .contact a {
     background: crimson;
@@ -106,7 +103,7 @@
 
 .btn button {
     margin-top: 5px;
-    background-color: crimson;
+    /* background-color: crimson; */
     border-radius: 20px;
     border: none;
     color: #fff;

@@ -1,0 +1,125 @@
+.bgnav {
+  background-color: rgba(78, 78, 78, 0.007);
+
+}
+
+.header-white {
+  background-color: rgba(85, 85, 85, 0.945);
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+.logo img {
+  /* width: 100px;
+  height: 60px; */
+  max-height: 40px;
+  margin-left: 0px;
+
+
+}
+
+
+.container {
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 30px;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+.row {
+  margin: 0 -5px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.card_bout {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+  }
+}
+
+.footer {
+  background: black;
+  height: 50vh;
+  margin-top: 40px;
+}
+
+#titre_principal_footer {
+  display: flex;
+  flex-direction: column;
+}
+
+#logo_footer {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  color: #fff;
+}
+
+#logo_footer img {
+  width: 100px;
+  height: 60px;
+  margin-left: 50px;
+  color: #fff;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer a:hover {
+  color: #fff;
+}
+
+.liena_footer {
+  margin-top: 50px;
+}
+
+.liena_footer h4 {
+  color: #fff;
+}
+
+#footer_flexbox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: flex-start;
+}
+
+.footer button {
+  float: right;
+  margin-top: 40px;
+  margin-right: 50px;
+  border-radius: 10px;
+}
+
+.footer p {
+  text-align: center;
+  margin-top: 50px;
+  color: #fff;
+}

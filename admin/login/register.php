@@ -1,6 +1,6 @@
 <?php
 ob_start();
-include_once("db_connect.php");
+include_once("../../login/db_connect.php");
 session_start();
 if(isset($_SESSION['user_id'])) {
 	header("Location:../index.php");
@@ -28,7 +28,7 @@ if (isset($_POST['signup'])) {
 		$cpassword_error = "Le mot de passe et la confirmation du mot de passe ne correspondent pas";
 	}
 	if (!$error) {
-		if(mysqli_query($conn, "INSERT INTO users(user, email, pass) VALUES('" . $name . "', '" . $email . "', '" . md5($password) . "')")) {
+		if(mysqli_query($conn, "INSERT INTO admin(user, email, pass) VALUES('" . $name . "', '" . $email . "', '" . md5($password) . "')")) {
 			$success_message = "Enregistré avec succès! <a href='login.php'>Cliquez ici pour vous identifier</a>";
 		} else {
 			$error_message = "Erreur lors de l'enregistrement... Veuillez réessayer plus tard !";
@@ -37,14 +37,15 @@ if (isset($_POST['signup'])) {
 }
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lorrybussiness site logistique transport et de commerce...">
     <title>Document</title>
-    <link rel="stylesheet" href="../asset/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../asset/registre.css">
+    <link rel="stylesheet" href="../../asset/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../asset/registre.css">
 </head>
 <body class="bg-light">
 <div class="login-form">
@@ -85,7 +86,7 @@ if (isset($_POST['signup'])) {
         </form>
         <span class="text-success"><?php if (isset($success_message)) { echo $success_message; } ?></span>
 			<span class="text-danger"><?php if (isset($error_message)) { echo $error_message; } ?></span>
-        <div class="hint-text small">Déjà enregistré? <a href="../login/login.php" class="text-success">Connectez-vous ici</a></div>
+        <div class="hint-text small">Déjà enregistré? <a href="../index.php" class="text-success">Connectez-vous ici</a></div>
     </div>
 
 </body>

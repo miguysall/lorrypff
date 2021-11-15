@@ -9,7 +9,7 @@ if(isset($_SESSION['user_id'])!="") {
 if (isset($_POST['login'])) {
 	$email = mysqli_real_escape_string($conn, $_POST['email']);
 	$password = mysqli_real_escape_string($conn, $_POST['password']);
-	$result = mysqli_query($conn, "SELECT * FROM users WHERE email = '" . $email. "' and pass = '" . md5($password). "'");
+	$result = mysqli_query($conn, "SELECT * FROM admin WHERE email = '" . $email. "' and pass = '" . md5($password). "'");
 	if ($row = mysqli_fetch_array($result)) {
 		$_SESSION['user_id'] = $row['uid'];
 		$_SESSION['user_name'] = $row['user'];
@@ -20,15 +20,15 @@ if (isset($_POST['login'])) {
 }
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lorrybussiness site logistique transport et de commerce...">
     <title>Document</title>
-<link rel="stylesheet" href="../asset/login.css">
-
 <link rel="stylesheet" href="../asset/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="../asset/login.css">
 </head>
 <body>
 <div class="login-form">
@@ -62,7 +62,7 @@ if (isset($_POST['login'])) {
             </div>
 
         </form>
-        <div class="hint-text small">Nouvel utilisateur? <a href="../login/register.php" class="text-success">Inscrivez-vous ici</a></div>
+
     </div>
 
 </body>

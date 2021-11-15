@@ -28,7 +28,11 @@
   <link rel="stylesheet" href="../AdminLTE-3.1.0/plugins/summernote/summernote-bs4.min.css">
   <!-- Datatables -->
   <link rel="stylesheet" type="text/css" href="../DataTables/media/css/jquery.dataTables.min.css">
+  <!-- Bootstrap -->
   <link rel="stylesheet" href="../../asset/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../asset/bootstrap/js/bootstrap.min.js">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
 <div class="wrapper">
@@ -92,43 +96,43 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item"> <li class="breadcrumb-item">
-                <a href="./listuser.php" class="nav-link">
+                <a href="../user/listuser.php" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p> Listes des Utilisateurs</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="./dashbord.php" class="nav-link active">
+                <a href="../user/dashbord.php" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Administrateur</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="./message.php" class="nav-link">
+                <a href="../user/message.php" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Listes des Messages</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="../contact/avantage.php" class="nav-link">
+                <a href="./avantage.php" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Avantage</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="../contact/caracteristique.php" class="nav-link">
+                <a href="./caracteristique.php" class="nav-link active">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Caracteristique</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="../contact/approuver.php" class="nav-link">
+                <a href="./approuver.php" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Approuver Par</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="../contact/appropos.php" class="nav-link">
+                <a href="./appropos.php" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>À propos</p>
                 </a>
@@ -160,22 +164,57 @@
 
     <!-- Main content -->
     <div class="container-fluid">
-    <h1 class="mb-4 text-danger">Listes des Administrateurs</h1>
-   <a href="../login/register.php"> <button type="button" class="btn btn-primary float-end mb-4" >
- Ajouter un administrateur
-</button></a>
+    <h1 class="mb-4 text-danger">Listes des Caracteristique de Lorrybussiness</h1>
+    <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary float-end mb-4" data-bs-toggle="modal" data-bs-target="#caracteristiqueModal">
+ Ajouter un Caracteristique
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="caracteristiqueModal" tabindex="-1" aria-labelledby="caracteristiqueModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="caracteristiqueModalLabel">Avantage de Lorrybussiness</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <form action="../login/caracteristique.php" method="post">
+      <div class="modal-body">
+
+                    <div>
+                        <label for="article1">Avantage 1</label>
+                        <textarea name="article1" type="text" id="" cols="10" rows="3" class="form-control"></textarea>
+                    </div>
+                    <div>
+                        <label for="article2">Avantage 2</label>
+                        <textarea name="article2" type="text" id="" cols="10" rows="3" class="form-control"></textarea>
+                    </div>
+                    <div>
+                        <label for="article3">Avantage 3</label>
+                        <textarea name="article3" type="text" id="" cols="10" rows="3" class="form-control"></textarea>
+                    </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+        <button type="submit" class="btn btn-primary" name="save">Envoyer</button>
+      </div>
+      </form>
+    </div>
+  </div>
+</div>
     <?php
              include_once("../../login/db_connect.php");
-              $result = $conn->query("SELECT * FROM   admin") or  die($conn->error);
+              $result = $conn->query("SELECT * FROM   caracteristique") or  die($conn->error);
              // pre_r($result);
         ?>
           <table class="table">
                     <thead>
                             <tr>
-                            <th>Identifiant</th>
-                                <th>Nom</th>
-                                <th>Mot de passe</th>
-                                <th>E-mail</th>
+                            <th>ID</th>
+                                <th>Articles 1</th>
+                                <th>Articles 2</th>
+                                <th>Article 3</th>
                                 <th colspan="2">Action</th>
                             </tr>
                     </thead>
@@ -183,12 +222,12 @@
                        while ($row = $result->fetch_assoc()) :
             ?>
                     <tr>
-                        <td><?php  echo $row['uid']; ?></td>
-                        <td><?php  echo $row['user']; ?></td>
-                        <td><?php  echo $row['pass']; ?></td>
-                        <td><?php  echo $row['email']; ?></td>
+                        <td><?php  echo $row['id']; ?></td>
+                        <td><?php  echo $row['article1']; ?></td>
+                        <td><?php  echo $row['article2']; ?></td>
+                        <td><?php  echo $row['article3']; ?></td>
                         <td>
-                            <a href="../login/deletmsg.php?delet=<?php echo $row['uid']; ?>" class="btn btn-danger">Delete</a>
+                            <a href="../login/caracteristique.php?delete=<?php echo $row['id']; ?>" class="btn btn-danger">Delete</a>
                         </td>
                     </tr>
                     <?php  endwhile; ?>
@@ -197,45 +236,8 @@
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
-<!-- MODEL FORMULAIRE  POUR MODIFFIER -->
-<!-- Button trigger modal -->
 
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-       <form action="" method="post">
-         <div>
-           <label for="identifiant">Identifiant</label>
-           <input type="number" name="uid"  class="form-control">
-         </div>
-         <div>
-           <label for="user">Nom Utilisateurs</label>
-           <input type="text"  name="user" class="form-control" >
-         </div>
-         <div>
-           <label for="pass">Mot de Passe</label>
-           <input type="text"  name="pass" class="form-control" >
-         </div>
-         <div>
-           <label for="email">Email</label>
-           <input type="email"  name="email" class="form-control" >
-         </div>
-       </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary" name="save">Edit Admin</button>
-      </div>
-    </div>
-  </div>
-</div>
   <!-- Control Sidebar -->
 
   <!-- /.control-sidebar -->
@@ -283,6 +285,5 @@
 <script type="text/javascript" src="../DataTables/media/js/jquery.dataTables.min.js"></script>
 
 <script type="text/javascript" src="../user/tableau.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
